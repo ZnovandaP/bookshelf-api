@@ -1,0 +1,28 @@
+{
+  "name": "bookshelf_api",
+  "version": "1.0.0",
+  "description": "Simple REST API for Bookshelf service",
+  "main": "./src/server.ts",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "start-dev": "nodemon",
+    "build": "tsc",
+    "build:serve": "tsc && node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "nodemon": "^3.1.0",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.9",
+    "joi": "^17.12.3"
+  }
+}
