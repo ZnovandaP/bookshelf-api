@@ -6,7 +6,7 @@ import type { HapiResToolkit, HapiReq } from '../types/hapi-types';
 export type AddBookPayload = Omit<BookEntity, 'updatedAt' | 'insertedAt' | 'finished' | 'id'>
 & Pick<BaseBookEntity, 'name'>;
 
-const addBook = async (request: HapiReq, h: HapiResToolkit) => {
+const addBookHandler = async (request: HapiReq, h: HapiResToolkit) => {
   const id = nanoid(16);
   const insertedAt = new Date().toISOString();
   const updatedAt = insertedAt;
@@ -72,4 +72,4 @@ const addBook = async (request: HapiReq, h: HapiResToolkit) => {
   return h.response({ status: 'fail', message: 'Buku gagal ditambahkan' }).code(400);
 };
 
-export default addBook;
+export default addBookHandler;

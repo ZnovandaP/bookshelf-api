@@ -1,13 +1,13 @@
 import * as Hapi from '@hapi/hapi';
 import {
-  addBook, deleteBookHandler, detailBookHandler, editBookHandler, getAllBooks,
+  addBookHandler, deleteBookHandler, detailBookHandler, editBookHandler, getAllBooks,
 } from '../handler';
 
 const routes: Hapi.ServerRoute[] = [
   {
     method: 'POST',
     path: '/books',
-    handler: addBook,
+    handler: addBookHandler,
   },
 
   {
