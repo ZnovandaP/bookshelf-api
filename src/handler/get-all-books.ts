@@ -39,7 +39,7 @@ const logicQueryFilteredBooks = (
   return true;
 };
 
-const getAllBooks = (request: HapiReq, h: HapiResToolkit) => {
+const getAllBooksHandler = (request: HapiReq, h: HapiResToolkit) => {
   const { name, reading, finished } = request.query as QueryParamsGetAllBooks;
 
   const filteredBooks: BooksEntity = books.filter(
@@ -58,4 +58,4 @@ const getAllBooks = (request: HapiReq, h: HapiResToolkit) => {
   }).code(200);
 };
 
-export default getAllBooks;
+export default getAllBooksHandler;
