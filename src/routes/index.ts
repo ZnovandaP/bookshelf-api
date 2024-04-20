@@ -1,5 +1,7 @@
 import * as Hapi from '@hapi/hapi';
-import { addBook, detailBookHandler, getAllBooks } from '../handler';
+import {
+  addBook, detailBookHandler, editBookHandler, getAllBooks,
+} from '../handler';
 
 const routes: Hapi.ServerRoute[] = [
   {
@@ -18,6 +20,12 @@ const routes: Hapi.ServerRoute[] = [
     method: 'GET',
     path: '/books/{id}',
     handler: detailBookHandler,
+  },
+
+  {
+    method: 'PUT',
+    path: '/books/{id}',
+    handler: editBookHandler,
   },
 ];
 
