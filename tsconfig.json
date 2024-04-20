@@ -5,11 +5,7 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["src/*"],
-      "*": ["node_modules/*"]
-    },
+    "baseUrl": "./src",
     "sourceMap": true,
     "esModuleInterop": true,
     "allowJs": true,
