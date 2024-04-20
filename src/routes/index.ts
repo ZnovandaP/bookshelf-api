@@ -1,6 +1,6 @@
 import * as Hapi from '@hapi/hapi';
 import {
-  addBook, detailBookHandler, editBookHandler, getAllBooks,
+  addBook, deleteBookHandler, detailBookHandler, editBookHandler, getAllBooks,
 } from '../handler';
 
 const routes: Hapi.ServerRoute[] = [
@@ -26,6 +26,12 @@ const routes: Hapi.ServerRoute[] = [
     method: 'PUT',
     path: '/books/{id}',
     handler: editBookHandler,
+  },
+
+  {
+    method: 'DELETE',
+    path: '/books/{id}',
+    handler: deleteBookHandler,
   },
 ];
 
