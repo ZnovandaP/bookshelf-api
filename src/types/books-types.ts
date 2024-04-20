@@ -1,10 +1,10 @@
-export type BookEntity = {
+export type BaseBookEntity = {
   id: string
   name: string
   publisher: string
 };
 
-export type BookDetailEntity = BookEntity & {
+export type BookEntity = BaseBookEntity & {
   year: number
   author: string
   summary: string
@@ -16,4 +16,4 @@ export type BookDetailEntity = BookEntity & {
   updatedAt: string
 };
 
-export type BoooksEntity = BookEntity[];
+export type BooksEntity = BaseBookEntity[];
