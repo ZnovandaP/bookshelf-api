@@ -20,6 +20,7 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
+    "newman": "^6.1.2",
     "nodemon": "^3.1.0",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5"
