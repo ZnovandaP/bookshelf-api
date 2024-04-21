@@ -6,10 +6,9 @@
   "description": "Simple REST API for Bookshelf service",
   "main": "./src/server.ts",
   "scripts": {
-    "start": "node ./dist/server.js",
+    "start": "tsc && node ./dist/server.js",
     "start-dev": "nodemon",
     "build": "tsc",
-    "build:serve": "tsc && node dist/server.js",
     "test:pm": "newman run  Bookshelf_API_Test.postman_collection.json --environment Bookshelf_API_Test.postman_environment.json",
     "lint": "eslint . --ext .ts"
   },
